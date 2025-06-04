@@ -1,0 +1,29 @@
+{% if collection.filters.size > 0 %}
+  <form id="FacetFiltersForm" class="facets-form" method="GET">
+    {% for filter in collection.filters %}
+      <div class="facets__group">
+        <div class="facets__heading">{{ filter.label | escape }}</div>
+        
+        <ul class="facets__list">
+          {% for value in filter.values %}
+            <li class="facets__item">
+              <label class="facets__label">
+                <input
+                  type="checkbox"
+                  name="{{ filter.param_name }}"
+                  value="{{ value.value }}"
+                  class="facets__checkbox"
+                  {% if value.active %}checked{% endif %}
+                >
+                <span class="facets__text">{{ value.label | escape }}</span>
+                <span class="facets__count">({{ value.count }})</span>
+              </label>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+    
+    <button type="submit" class="facets__apply">Apply filters</button>
+  </form>
+{% endif %}
