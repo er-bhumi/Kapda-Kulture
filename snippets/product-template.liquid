@@ -186,7 +186,7 @@
             </div>
 
             {%- if shop.taxes_included or shop.shipping_policy.body != blank -%}
-              <div class="product__policies rte small--text-center">
+              {% comment %} <div class="product__policies rte small--text-center">
                 <small>
                   {%- if shop.taxes_included -%}
                     {{ 'products.product.include_taxes' | t }}
@@ -195,7 +195,7 @@
                     {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
                   {%- endif -%}
                 </small>
-              </div>
+              </div> {% endcomment %}
             {%- endif -%}
 
             {%- if settings.inventory_enable or settings.inventory_transfers_enable -%}
