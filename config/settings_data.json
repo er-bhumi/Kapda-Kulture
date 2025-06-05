@@ -205,7 +205,7 @@
             "settings": {
               "show_footer_title": true,
               "menu": "mens-t-shirts",
-              "container_width": 30
+              "container_width": 23
             }
           },
           "menu_XmJEUb": {
@@ -213,7 +213,7 @@
             "settings": {
               "show_footer_title": true,
               "menu": "women-s-t-shirt",
-              "container_width": 30
+              "container_width": 23
             }
           }
         },
