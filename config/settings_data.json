@@ -1242,6 +1242,7 @@
               "color_accent": "rgba(0,0,0,0)",
               "text_align": "vertical-center horizontal-center",
               "image": "shopify://shop_images/banner_png.png",
+              "image_mobile": "shopify://shop_images/phone_banner.jpg",
               "overlay_opacity": 0,
               "focal_point": "center center"
             }
