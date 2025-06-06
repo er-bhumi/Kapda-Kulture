@@ -1,0 +1,53 @@
+<!-- sections/feature-icons.liquid -->
+<div class="feature-icons-section" style="padding: 40px 0; background-color: #fff; text-align: center;">
+  <div class="page-width">
+    <div class="grid grid--3-col">
+      {% for block in section.blocks %}
+        <div class="grid__item" style="padding: 20px;">
+          <img src="{{ block.settings.icon | img_url: 'medium' }}" alt="Icon" style="height: 60px; margin-bottom: 15px;">
+          <p style="font-weight: bold; color: #4a4a4a; margin: 0;">{{ block.settings.title }}</p>
+          <p style="font-size: 14px; color: #7a7a7a;">{{ block.settings.text }}</p>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Feature Icons",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "icon_block",
+      "name": "Feature Icon",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "100% SECURE PAYMENT"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Description",
+          "default": "Your payment is safe with us."
+        }
+      ]
+    }
+  ],
+  "max_blocks": 3,
+  "presets": [
+    {
+      "name": "Feature Icons",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
