@@ -205,7 +205,7 @@
             "settings": {
               "show_footer_title": true,
               "menu": "mens-t-shirts",
-              "container_width": 30
+              "container_width": 23
             }
           },
           "menu_XmJEUb": {
@@ -213,7 +213,7 @@
             "settings": {
               "show_footer_title": true,
               "menu": "women-s-t-shirt",
-              "container_width": 30
+              "container_width": 23
             }
           }
         },
@@ -1242,6 +1242,7 @@
               "color_accent": "rgba(0,0,0,0)",
               "text_align": "vertical-center horizontal-center",
               "image": "shopify://shop_images/banner_png.png",
+              "image_mobile": "shopify://shop_images/phone_banner.jpg",
               "overlay_opacity": 0,
               "focal_point": "center center"
             }
@@ -1305,6 +1306,11 @@
       },
       "yoast-seo-metatags": {
         "type": "shopify://apps/yoast-seo-seo-for-everyone/blocks/metatags/7c777011-bc88-4743-a24e-64336e1e5b46",
+        "disabled": false,
+        "settings": {}
+      },
+      "1626193551103621034": {
+        "type": "shopify://apps/cod-king/blocks/app-embed/99553eb5-bf07-4ce0-9263-7e5f10cab22c",
         "disabled": false,
         "settings": {}
       }
