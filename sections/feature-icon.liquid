@@ -1,0 +1,40 @@
+{%- render 'feature-icon', section: section -%}
+
+{% schema %}
+{
+  "name": "Feature Icons",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "icon_block",
+      "name": "Feature Icon",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "100% SECURE PAYMENT"
+        },
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Description",
+          "default": "Your payment is safe with us."
+        }
+      ]
+    }
+  ],
+  "max_blocks": 3,
+  "presets": [
+    {
+      "name": "Feature Icons",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
